@@ -3,7 +3,7 @@ from flask import Flask, request
 from api import api
 from db import mysql
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 app.config.update(
     SESSION_COOKIE_SECURE=True,
